@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="assets/styles.css">
+  <script type="text/javascript" src="js/paint.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Paint Web</h1>
+    </header>
+    <section>
+      <div id="tools">
+        <div id="colores">
+          <button id="black" onclick="changeColor('black')"></button>
+          <button id="red" onclick="changeColor('red')"></button>
+          <button id="green" onclick="changeColor('lightgreen')"></button>
+          <button id="yellow" onclick="changeColor('yellow')"></button>
+          <button id="blue" onclick="changeColor('lightblue')"></button>
+        </div>
+        <div id="otrasHerramientas">
+          <button id="clear" onclick="clearCanvas()">Clear</button>
+       </div>
+      </div>
+      <canvas id="canvas" width="300"
+       height="350"></canvas>
+    </section>
+  </body>
+</html>
