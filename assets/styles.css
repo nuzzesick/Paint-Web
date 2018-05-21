@@ -1,9 +1,21 @@
-*{ margin: 0; padding: 0; }
-
+body , html {
+    height: 100%;
+    font-family: 'Poppins' , sans-serif;
+}
+* { 
+    margin: 0; padding: 0; 
+}
+header {
+    position: fixed;
+    background: transparent;
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+    -webkit-box-shadow: 0 0 15px #e9e9e9;
+}
 section
 {
-    border: 1px solid black;
-    padding-top: 20px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -19,42 +31,116 @@ button
     outline: 0;
     border: 0;
 }
+.title {
+    padding-top: 10px;
+    color: #686868;
+    text-align: center;
+    font-size: 22px;
+}
+.menupanel {
+    color: white;
+    text-align: center;
+}
 
-#herramientas
+.tools
 {
     width: 800px;
     height: 135px;
     margin: 0px auto;
 }
-
-#colores
-{
-    width: 100%;
-    height: 20px;
+.colors-button {
+width: 24px;
+height: 24px;
+margin-top: 10px;
+border-radius: 20%;
+margin-left: 3px;
+border: 3px solid rgba(0, 0, 0, 0.29);
+cursor:pointer;
 }
+.colors button:hover { 
+     width: 25px;
+     height: 25px;
+ }
 
-#colores button
-{
-    width: 20%;
-    height: 10px;
-    margin-top: 5px;
-    float: left;
+#white { 
+    background: white; 
 }
-    #colores button:hover { opacity: 0.5; 
-     -webkit-box-shadow: 0 0 8px black;}
-
-#black { background: black; }
-#red { background: red; }
-#green { background: lightgreen; }
-#yellow { background: yellow; }
-#blue { background: lightblue; }
-#otrasHerramientas
+#silver {
+    background: #b1adad;
+}
+#dark {
+    background: #444;
+}
+#black {
+    background: black;
+}
+#red1 {
+    background: #ff9797;
+}
+#red2 {
+    background: #f35e5e;
+}
+#red3 { 
+    background: red; 
+}
+#red4 {
+    background: #9c0000;
+}
+#orange1 {
+    background: #ffa16e;
+}
+#orange2 {
+    background: #ff7e38;
+}
+#orange3 {
+    background: #db4905;
+}
+#brown {
+    background: #9b3000;
+}
+#yellow1 {
+    background:  #f8ed7c;
+}
+#yellow2 {
+    background: #e8f55c;
+}
+#yellow3 {
+    background: #a4b300;
+}
+#yellow4 {
+    background: #899600;
+}
+#lightgreen1 {
+    background: #daffae;
+}
+#lightgreen2 {
+    background: #b9fc6a;
+}
+#lightgreen3 {
+    background: #87f900;
+}
+#lightgreen4 {
+    background: #5da803;
+}
+#green1 {
+    background: #aeffc0;
+}
+#green2 {
+    background: #64fb86;
+}
+#green3 {
+    background: #00ff39;
+}
+#green4 {
+    background: #009e23;
+}
+.extratools
 {
     width: 100%;
     height: 115px;
 }
 
-#otrasHerramientas button
+.extratools button
 {
     width: 20%;
     height: 50px;
@@ -64,15 +150,14 @@ button
     cursor: pointer;
     float: left;
 }
-#otrasHerramientas button:hover { opacity: 0.5; 
+.extratools button:hover { opacity: 0.5; 
  -webkit-box-shadow: 0 0 8px black;}
 
- #clearCanvas {font: 25px impact;}
- #brushSize1 {font: 10px impact;}
- #brushSize2 {font: 20px impact;}
- #brushSize3 {font: 30px impact;}
- #brushSize4 {font: 40px impact;}
+ #clearCanvas {font-size: 25px;}
+ #brushSize {
+font-size: 18px;
+}
  #fillCanvas {font: 25px impact;}
- #otrasHerramientas #openFile {font:25px existence;}
+ .extratools #openFile {font:25px existence;}
 
- #file {visibility: hidden;}
+#file {visibility: hidden;}
