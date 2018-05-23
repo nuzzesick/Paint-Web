@@ -45,20 +45,60 @@
     display: block;
     margin-left: 8px;
 }
+#fillicon {
+	color:black;
+	border: 3px solid rgba(0, 0, 0, 0.29);
+}
+#coloricon {
+	color:black;
+	border: 3px solid rgba(0, 0, 0, 0.29);
+}
 </style>
 
   </head>
   <body>
+<script>
+ function canvasWhite() {
+ document.getElementById("fillicon").style.color = "white";
+}
+ function colorWhite() {
+ document.getElementById("coloricon").style.color = "white";
+}
+ function canvasb1adad() {
+ document.getElementById("fillicon").style.color = "#b1adad";
+}
+ function colorb1adad() {
+ document.getElementById("coloricon").style.color = "#b1adad";
+}  
+ function canvas444() {
+ document.getElementById("fillicon").style.color = "#444";
+}
+ function color444() {
+ document.getElementById("coloricon").style.color = "#444";
+} 
+ function canvasBlack() {
+ document.getElementById("fillicon").style.color = "black";
+}
+ function colorBlack() {
+ document.getElementById("coloricon").style.color = "black";
+}          
+ function canvasff9797() {
+ document.getElementById("fillicon").style.color = "#ff9797";
+}
+ function colorff9797() {
+ document.getElementById("coloricon").style.color = "#ff9797";
+}        
+</script>
   	<header>
       <h1 class="title">Paint Web</h1>
 <div style="margin-left: 150px" class="dropdown">
-  <button class="dropbtn">Colors<i style="position:absolute; margin-left: 8px" class="fas fa-sort-down"></i></button>
+  <button class="dropbtn"><i id="coloricon" class="fas fa-square-full"></i>&nbsp;&nbsp;&nbsp;Colors<i style="position:absolute; margin-left: 8px" class="fas fa-sort-down"></i></button>
   <div class="dropdown-content">
-          <button class="colors-button" id="white" onclick="changeColor('white')"></button>
-          <button class="colors-button" id="silver" onclick="changeColor('#b1adad')"></button>
-          <button class="colors-button" id="dark" onclick="changeColor('#444')"></button>
-          <button class="colors-button" id="black" onclick="changeColor('black')"></button>
-          <button class="colors-button" id="red1" onclick="changeColor('#ff9797')"></button>
+          <button class="colors-button" id="white" onclick="changeColor('white');canvasWhite();colorWhite();"></button>
+          <button class="colors-button" id="silver" onclick="changeColor('#b1adad');canvasb1adad();colorb1adad();"></button>
+          <button class="colors-button" id="dark" onclick="changeColor('#444');canvas444();color444();"></button>
+          <button class="colors-button" id="black" onclick="changeColor('black');canvasBlack();colorBlack();"></button>
+          <button class="colors-button" id="red1" onclick="changeColor('#ff9797');canvasff9797();colorff9797();"></button>
           <button class="colors-button" id="red2" onclick="changeColor('#f35e5e')"></button>
           <button class="colors-button" id="red3" onclick="changeColor('red')"></button>
           <button class="colors-button" id="red4" onclick="changeColor('#9c0000')"></button>
@@ -107,7 +147,10 @@
   <button class="dropbtn" onclick="clearCanvas()"><i style="font-size: 16px;" class="fas fa-undo-alt"></i>&nbsp;&nbsp;&nbsp;Clear</button>
   </div>
   <div class="dropdown" style="float:right; margin-right: 25px;">
-  	<button class="dropbtn" id="openFile" onclick="triggerClick()"><i style="font-size: 17px;"class="fas fa-file-image"></i>&nbsp;&nbsp;&nbsp;Add Image</button>
+  	<button class="dropbtn" id="openFile" onclick="triggerClick()"><i style="font-size: 17px;"class="fas fa-file-image"></i>&nbsp;&nbsp;&nbsp;Image</button>
+  </div>
+<div class="dropdown" style="float:right; margin-right: 25px;">
+  	<button class="dropbtn" onclick="fillCanvas();colorFill()"><i id="fillicon" class="fas fa-square-full"></i>&nbsp;&nbsp;&nbsp;Fill</button>
   </div>
     </header>
     <section>
