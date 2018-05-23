@@ -46,9 +46,10 @@
     margin-left: 8px;
 }
 </style>
+
   </head>
   <body>
-    <header>
+  	<header>
       <h1 class="title">Paint Web</h1>
 <div style="margin-left: 150px" class="dropdown">
   <button class="dropbtn">Colors<i style="position:absolute; margin-left: 8px" class="fas fa-sort-down"></i></button>
@@ -102,8 +103,11 @@
           <button id="brushSize" onclick="changeBrushSize(80)">80px</button>
 </div>
 </div>
-<div class="dropdown" style="margin-top: 5px; float:right; margin-right: 25px;">
-  <button class="dropbtn" onclick="clearCanvas()"><i style="font-size: 20px;" class="fas fa-undo-alt"></i></button>
+<div class="dropdown" style="float:right; margin-right: 25px;">
+  <button class="dropbtn" onclick="clearCanvas()"><i style="font-size: 16px;" class="fas fa-undo-alt"></i>&nbsp;&nbsp;&nbsp;Clear</button>
+  </div>
+  <div class="dropdown" style="float:right; margin-right: 25px;">
+  	<button class="dropbtn" id="openFile" onclick="triggerClick()"><i style="font-size: 17px;"class="fas fa-file-image"></i>&nbsp;&nbsp;&nbsp;Add Image</button>
   </div>
     </header>
     <section>
@@ -115,7 +119,6 @@
           <button id="brushSize3" onclick="changeBrushSize(30)"><i class="fas fa-paint-brush"></i></button>
           <button id="brushSize4" onclick="changeBrushSize(40)"><i class="fas fa-paint-brush"></i></button><br/>
           <button id="RoundBrush" onclick="changeBrushStyle('round')">Round</button>
-          <button id="RoundBrush" onclick="changeBrushStyle('triangle')">s</button>
           <button id="fillCanvas" onclick="fillCanvas()">Fill</button>
           <button id="openFile" onclick="triggerClick()"><i class="fas fa-file-image"></i></button>
        </div>
