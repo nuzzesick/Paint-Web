@@ -1,6 +1,6 @@
 var canvas = document.getElementById ('canvas');
-var person = prompt("Please enter your name");
-    if (person != null) {
+var person = prompt("Please enter your name", "Max 10");
+    if (person != null && person.length <= 10) {
         document.getElementById("name").innerHTML =
         "Hello " + person + "!";
         }
