@@ -1,9 +1,10 @@
 var canvas = document.getElementById ('canvas');
-var person = prompt("Please enter your name", "Max 10");
-    if (person != null && person.length <= 10) {
+var person = prompt("Please, enter your name!");
+if (person != null && person.length <= 10) {
         document.getElementById("name").innerHTML =
-        "Hello " + person + "!";
-        }
+        "Hi " + person + "!";
+}
+         
 var context = canvas.getContext('2d');
 context.lineWidth = 5;
 context.lineCap='round';
