@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Paint Web</title>
@@ -11,11 +11,11 @@
 .dropbtn {
     background-color: transparent;
     color: #686868;
-    padding-top: 20px;
+    margin-top: 20px;
     font-size: 16px;
     border: none;
     font-weight: 600;
-    min-width: 125px;
+    min-width: 130px;
     cursor: pointer;
     font-family: 'Poppins' , sans-serif;
 }
@@ -90,7 +90,7 @@
 }        
 </script>
   	<header>
-      <h1 id="name"></h1> 
+      <a id="name"></a> 
       <h1 class="title">Paint Web</h1>
 <div style="margin-left: 150px" class="dropdown">
   <button class="dropbtn"><i id="coloricon" class="fas fa-square-full"></i>&nbsp;&nbsp;&nbsp;Colors<i style="position:absolute; margin-left: 8px" class="fas fa-sort-down"></i></button>
@@ -144,33 +144,19 @@
           <button id="brushSize" onclick="changeBrushSize(80)">80px</button>
 </div>
 </div>
-<div class="dropdown" style="float:right; margin-right: 25px;">
+<div class="dropdown" style="float:right; margin-right: 45px;">
   <button class="dropbtn" onclick="clearCanvas()"><i style="font-size: 16px;" class="fas fa-undo-alt"></i>&nbsp;&nbsp;&nbsp;Clear</button>
   </div>
-  <div class="dropdown" style="float:right; margin-right: 25px;">
+  <div class="dropdown" style="float:right; margin-right: -20px;">
   	<button class="dropbtn" id="openFile" onclick="triggerClick()"><i style="font-size: 17px;"class="fas fa-file-image"></i>&nbsp;&nbsp;&nbsp;Image</button>
   </div>
-<div class="dropdown" style="float:right; margin-right: 25px;">
+<div class="dropdown" style="float:right; margin-right: -20px;">
   	<button class="dropbtn" onclick="fillCanvas();colorFill()"><i id="fillicon" class="fas fa-square-full"></i>&nbsp;&nbsp;&nbsp;Fill</button>
   </div>
     </header>
-    <section>
-      <div class="tools" style="display: none">
-        <div class="extratools">
-          <button id="clearCanvas" onclick="clearCanvas()"><i class="fas fa-redo"></i></button>
-          <button id="brushSize1" onclick="changeBrushSize(5)"><i class="fas fa-paint-brush"></i></button>
-          <button id="brushSize2" onclick="changeBrushSize(20)"><i class="fas fa-paint-brush"></i></button>
-          <button id="brushSize3" onclick="changeBrushSize(30)"><i class="fas fa-paint-brush"></i></button>
-          <button id="brushSize4" onclick="changeBrushSize(40)"><i class="fas fa-paint-brush"></i></button><br/>
-          <button id="RoundBrush" onclick="changeBrushStyle('round')">Round</button>
-          <button id="fillCanvas" onclick="fillCanvas()">Fill</button>
-          <button id="openFile" onclick="triggerClick()"><i class="fas fa-file-image"></i></button>
-       </div>
-      </div>
       <canvas id="canvas" width="1360px"
        height="629px"></canvas>
        <input id="file" type="file" accept="image/*" />
-    </section>
     <script src="js/paint.js"></script>
   </body>
 </html>
