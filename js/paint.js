@@ -57,12 +57,12 @@ document.getElementById('file').addEventListener('change', function(e)
 
         if(newImageWidth > newImageHeight && newImageWidth > 800)
         {
-            newImageWidth=1800;
-            newImageHeight=800;
+            newImageWidth=1360;
+            newImageHeight=629;
         }
         if((newImageWidth >= newImageHeight || newImageHeight > newImageWidth) && newImageHeight > 500)
         {
-            newImageHeight=800;
+            newImageHeight=629;
             newImageWidth=newImageWidth;
         }
         context.drawImage(image, 0, 0, newImageWidth, newImageHeight);
