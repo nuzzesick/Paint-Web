@@ -1,8 +1,13 @@
 var canvas = document.getElementById ('canvas');
+var person = prompt("Please enter your name");
+    if (person != null) {
+        document.getElementById("name").innerHTML =
+        "Hello " + person + "!";
+        }
 var context = canvas.getContext('2d');
 context.lineWidth = 5;
+context.lineCap='round';
 var down = false;
-
 canvas.addEventListener('mousemove', draw);
 
 canvas.addEventListener('mousedown',function()
@@ -14,12 +19,6 @@ canvas.addEventListener('mousedown',function()
 });
 
 canvas.addEventListener('mouseup',function(){ down = false; });
-window.onload = function round() {
-var c=document.getElementById('canvas');
-var ctx=c.getContext('2d');
-ctx.lineCap='round';
- }
-
 
 function draw (e)
 {
@@ -58,13 +57,13 @@ document.getElementById('file').addEventListener('change', function(e)
 
         if(newImageWidth > newImageHeight && newImageWidth > 800)
         {
-            newImageWidth=800;
-            newImageHeight=800 / originalImageRatio;
+            newImageWidth=1800;
+            newImageHeight=800;
         }
         if((newImageWidth >= newImageHeight || newImageHeight > newImageWidth) && newImageHeight > 500)
         {
-            newImageHeight=500;
-            newImageWidth= 500 * originalImageRatio;
+            newImageHeight=800;
+            newImageWidth=newImageWidth;
         }
         context.drawImage(image, 0, 0, newImageWidth, newImageHeight);
         URL.revokeObjectURL(temp);
