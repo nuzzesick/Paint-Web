@@ -32,6 +32,7 @@ button
     outline: 0;
     border: 0;
 }
+#buttonsxd { border: 5px solid yellow; width: 50px;}
 .title {
     padding-top: 14px;
     color: #2f2f2f;
@@ -58,6 +59,7 @@ button
     height: 135px;
     margin: 0px auto;
 }
+
 .colors-button {
 width: 24px;
 height: 24px;
