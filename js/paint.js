@@ -34,16 +34,26 @@ function draw (e)
     {
         context.lineTo(xPos, yPos);
         context.stroke();
+        context.strokeStyle = color;
     }
 }
-
-function changeColor(color) {context.strokeStyle = color; context.fillStyle = color;}
+var color = "rgb(255,0,0)";
+function change(e) { color=this.value; }
 function clearCanvas() { context.clearRect(0, 0, canvas.width, canvas.height); }
 function changeBrushSize(size) {context.lineWidth = size;}
 function fillCanvas () { context.fillRect(0, 0, canvas.width, canvas.height);}
 function triggerClick() {document.getElementById('file').click();}
 function changeBrushStyle(brushStyle) {context.lineCap=brushStyle;}
+document.getElementById("color").onchange = change;
 
+		function start(e){
+		  var mouseX = e.pageX - canvas.offsetLeft;
+		  var mouseY = e.pageY - canvas.offsetTop;
+		  paint = true;
+		  ctx.beginPath();
+		  ctx.moveTo(mouseX,mouseY);
+		  points[points.length]=[mouseX,mouseY];
+		};
 document.getElementById('file').addEventListener('change', function(e)
 {
     clearCanvas();
