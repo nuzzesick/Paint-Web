@@ -37,7 +37,7 @@ function draw (e)
         context.strokeStyle = color;
     }
 }
-var color = "rgb(255,0,0)";
+var color = "black";
 function change(e) { color=this.value; }
 function clearCanvas() { context.clearRect(0, 0, canvas.width, canvas.height); }
 function changeBrushSize(size) {context.lineWidth = size;}
