@@ -45,10 +45,6 @@
     display: block;
     margin-left: 8px;
 }
-#fillicon {
-	color:black;
-	border: 3px solid rgba(0, 0, 0, 0.29);
-}
 #coloricon {
 	color:black;
 	border: 3px solid rgba(0, 0, 0, 0.29);
@@ -72,7 +68,7 @@
           <button id="brushSize" onclick="changeBrushSize(40)">40px</button>
           <button id="brushSize" onclick="changeBrushSize(60)">60px</button>
           <button id="brushSize" onclick="changeBrushSize(80)">80px</button>
-	  <button id="brushSize" onclick="changeBrushSize(100)">100px</button>
+          <button id="brushSize" onclick="changeBrushSize(100)">100px</button>
           <button id="brushSize" onclick="changeBrushSize(120)">120px</button>
           <button id="brushSize" onclick="changeBrushSize(140)">140px</button>
           <button id="brushSize" onclick="changeBrushSize(160)">160px</button>
@@ -87,15 +83,17 @@
     <button id="brushStyle" onclick="changeBrushStyle('square')">Square</button>
 </div>
 </div>
-<div class="dropdown" style="float:right; margin-right: 45px;">
+<div class="dropdown" style="float:right; margin-right: 30px;margin-top: 20px;">
+            <a target="_blank" href="https://twitter.com/nuzze_"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/lautizarbo/"><i class="fab fa-instagram"></i></a>
+  </div>
+<div class="dropdown" style="float:right; margin-right: 5px;">
   <button class="dropbtn" onclick="clearCanvas()"><i style="font-size: 16px;" class="fas fa-undo-alt"></i>&nbsp;&nbsp;&nbsp;Clear</button>
   </div>
   <div class="dropdown" style="float:right; margin-right: -20px;">
   	<button class="dropbtn" id="openFile" onclick="triggerClick()"><i style="font-size: 17px;"class="fas fa-file-image"></i>&nbsp;&nbsp;&nbsp;Image</button>
   </div>
-<div class="dropdown" style="float:right; margin-right: -20px;">
-  	<button class="dropbtn" onclick="fillCanvas();colorFill()"><i id="fillicon" class="fas fa-square-full"></i>&nbsp;&nbsp;&nbsp;Fill</button>
-  </div>
+        
     </header>
     <section>
       <canvas id="canvas" width="4000px"
