@@ -109,6 +109,17 @@ cursor:pointer;
 #brushSize:hover {
     background: #f0f0f0;
 }
+#brushStyle {
+    font-size: 18px;
+    font-family: 'Poppins' , sans-serif;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    color: #686868;
+}
+#brushStyle:hover {
+    background: #f0f0f0;
+}
  .extratools #openFile {font:25px existence;}
 
 #file {visibility: hidden;}
