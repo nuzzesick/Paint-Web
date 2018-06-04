@@ -84,3 +84,14 @@ document.getElementById('file').addEventListener('change', function(e)
         URL.revokeObjectURL(temp);
     });
 });
+function themedark() {
+	var header = document.getElementById("header");
+	header.style.background = "#2f2f2f";       
+	var menutitle = document.getElementById("menu-title");
+	menutitle.style.color = "white";
+	var dropbtn = document.getElementById("dropbtn");
+    dropbtn.style.color = "white";
+	var title = document.getElementById("title");
+    title.style.color = "white";
+
+}
