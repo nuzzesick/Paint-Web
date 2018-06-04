@@ -6,14 +6,6 @@ body , html {
 * { 
     margin: 0; padding: 0; 
 }
-header {
-    position: fixed;
-    background: white;
-    width: 100%;
-    height: 70px;
-    z-index: 999;
-    -webkit-box-shadow: 0 0 15px #d2d2d2;
-}
 section
 { 
     position: fixed;
@@ -33,12 +25,20 @@ button
     outline: 0;
     border: 0;
 }
+#header {
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    -webkit-box-shadow: 0 0 15px #d2d2d2;
+}
 #color {
     border: 4px solid #6b6b6b33;
     width: 28px;
     border-radius: 5px;
 }
-.title {
+#title {
     padding-top: 14px;
     color: #2f2f2f;
     text-align: center;
@@ -104,7 +104,6 @@ cursor:pointer;
     background: transparent;
     cursor: pointer;
     width: 100%;
-    color: #686868;
 }
 #brushSize:hover {
     background: #f0f0f0;
@@ -115,7 +114,6 @@ cursor:pointer;
     background: transparent;
     cursor: pointer;
     width: 100%;
-    color: #686868;
 }
 #brushStyle:hover {
     background: #f0f0f0;
