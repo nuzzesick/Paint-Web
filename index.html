@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <style>
-.dropbtn {
+#dropbtn {
     background-color: transparent;
     color: #686868;
     margin-top: 20px;
@@ -49,18 +49,23 @@
 	color:black;
 	border: 3px solid rgba(0, 0, 0, 0.29);
 }
+#menu-title {
+	color: #686868; 
+	font-weight: 600
+}
 </style>
 
   </head>
   <body>
-  	<header>
+  	<header id="header">
+<button onclick="themedark();">Dark</button>
       <a id="name"></a> 
-      <h1 class="title">Paint Web</h1>
+      <h1 id="title">Paint Web</h1>
 <div style="margin-left: 150px" class="dropdown">
-      <input type="color" id="color" value="Color"><a style="color: #686868; font-weight: 600"> &nbsp;Colors</a>
+      <input type="color" id="color" value="Color"><a id="menu-title"> &nbsp;Colors</a>
     </div>  
 <div class="dropdown">
-  <button class="dropbtn">Brush Size<i style="position:absolute; margin-left: 8px" class="fas fa-sort-down"></i></button>
+  <button id="dropbtn">Brush Size<i style="position:absolute; margin-left: 8px" class="fas fa-sort-down"></i></button>
   <div class="dropdown-content" style="min-height: auto;">
           <button id="brushSize" onclick="changeBrushSize(5)">5px</button>
           <button id="brushSize" onclick="changeBrushSize(10)">10px</button>
@@ -77,11 +82,11 @@
 </div>
 </div>
 <div class="dropdown">
-  <button class="dropbtn">Brush Style<i style="position:absolute;margin-left: 8px" class="fas fa-sort-down"></i></button>
+  <button id="dropbtn">Brush Style<i style="position:absolute;margin-left: 8px" class="fas fa-sort-down"></i></button>
   <div class="dropdown-content" style="min-height: auto;">
-	  <button id="brushStyle" onclick="changeBrushStyle('round')">Round</button>
+	<button id="brushStyle" onclick="changeBrushStyle('round')">Round</button>
     <button id="brushStyle" onclick="changeBrushStyle('square')">Square</button>
-	  <button id="brushStyle" onclick="changeBrushStyle"('butt')>Butt</button>
+	<button id="brushStyle" onclick="changeBrushStyle('butt')">Butt</button>
 </div>
 </div>
 <div class="dropdown" style="float:right; margin-right: 30px;margin-top: 20px;">
@@ -89,10 +94,10 @@
             <a target="_blank" href="https://www.instagram.com/lautizarbo/"><i class="fab fa-instagram"></i></a>
   </div>
 <div class="dropdown" style="float:right; margin-right: 5px;">
-  <button class="dropbtn" onclick="clearCanvas()"><i style="font-size: 16px;" class="fas fa-undo-alt"></i>&nbsp;&nbsp;&nbsp;Clear</button>
+  <button id="dropbtn" onclick="clearCanvas()"><i style="font-size: 16px;" class="fas fa-undo-alt"></i>&nbsp;&nbsp;&nbsp;Clear</button>
   </div>
   <div class="dropdown" style="float:right; margin-right: -20px;">
-  	<button class="dropbtn" id="openFile" onclick="triggerClick()"><i style="font-size: 17px;"class="fas fa-file-image"></i>&nbsp;&nbsp;&nbsp;Image</button>
+  	<button id="dropbtn" id="openFile" onclick="triggerClick()"><i style="font-size: 17px;"class="fas fa-file-image"></i>&nbsp;&nbsp;&nbsp;Image</button>
   </div>
         
     </header>
